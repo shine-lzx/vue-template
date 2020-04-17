@@ -15,7 +15,7 @@ export default {
     }
   },
   mounted() {
-    console.log('mixins', this.userInfo)
+    // console.log('mixins', this.userInfo)
   },
   data() {
     return {

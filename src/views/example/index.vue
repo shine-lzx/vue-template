@@ -1,6 +1,7 @@
 <template>
   <div>
     <h4>6666</h4>
+    <button @click="handleClick">click</button>
     <componentA />
   </div>
 </template>
@@ -13,7 +14,7 @@ export default {
       name: this.age
     }
   },
-  
+
   components: {
     componentA
   },
@@ -23,6 +24,12 @@ export default {
   data() {
     return {
       age: 18
+    }
+  },
+
+  methods: {
+    handleClick() {
+      this.age = 10
     }
   }
 }

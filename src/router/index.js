@@ -41,6 +41,32 @@ export const constantRoutes = [
     ]
   },
 
+  {
+    path: '/broadcast',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'broadcast',
+        component: () => import('@/views/broadcast/index'),
+        meta: { title: 'broadcast', icon: 'example' }
+      }
+    ]
+  },
+
+  {
+    path: '/DesignMode',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'DesignMode',
+        component: () => import('@/views/DesignMode/index'),
+        meta: { title: 'DesignMode', icon: 'example' }
+      }
+    ]
+  },
+
   { path: '*', redirect: '/404', hidden: true }
 ]
 
