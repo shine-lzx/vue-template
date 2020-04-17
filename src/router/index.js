@@ -28,53 +28,19 @@ export const constantRoutes = [
     }]
   },
 
-  // {
-  //   path: '/example',
-  //   component: Layout,
-  //   redirect: '/example/table',
-  //   name: 'Example',
-  //   meta: { title: 'Example', icon: 'example' },
-  //   children: [
-  //     {
-  //       path: 'table',
-  //       name: 'Table',
-  //       component: () => import('@/views/table/index'),
-  //       meta: { title: 'Table', icon: 'table' }
-  //     },
-  //     {
-  //       path: 'tree',
-  //       name: 'Tree',
-  //       component: () => import('@/views/tree/index'),
-  //       meta: { title: 'Tree', icon: 'tree' }
-  //     }
-  //   ]
-  // },
-
   {
-    path: '/accountmanagement',
+    path: '/example',
     component: Layout,
     children: [
       {
         path: 'index',
-        name: 'accountmanagement',
-        component: () => import('@/views/accountmanagement/index'),
-        meta: { title: 'accountmanagement', icon: 'form' }
+        name: 'example',
+        component: () => import('@/views/example/index'),
+        meta: { title: 'example', icon: 'example' }
       }
     ]
   },
 
-  {
-    path: '/modulemanagement',
-    component: Layout,
-    children: [
-      {
-        path: 'index',
-        name: 'modulemanagement',
-        component: () => import('@/views/modulemanagement/index'),
-        meta: { title: 'modulemanagement', icon: 'form' }
-      }
-    ]
-  },
   { path: '*', redirect: '/404', hidden: true }
 ]
 

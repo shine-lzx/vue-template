@@ -9,7 +9,7 @@
       label-position="left"
     >
       <div class="title-container">
-        <h3 class="title">四合院大屏运营平台</h3>
+        <h3 class="title">shine</h3>
       </div>
 
       <el-form-item prop="username">
@@ -185,7 +185,7 @@ $cursor: #fff;
 </style>
 
 <style lang="scss" scoped>
-$bg: #15182A;
+$bg: #15182a;
 $dark_gray: #889aa4;
 $light_gray: #eee;
 

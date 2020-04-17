@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: '大屏运营平台',
+  title: 'shine',
 
   /**
    * @type {boolean} true | false
