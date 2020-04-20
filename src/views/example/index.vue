@@ -18,14 +18,15 @@ export default {
   components: {
     componentA
   },
-
-  mounted() {},
-
+  
   data() {
     return {
       age: 18
     }
   },
+
+  mounted() {},
+
 
   methods: {
     handleClick() {

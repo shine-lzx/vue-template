@@ -4,12 +4,12 @@
 
 <script>
 export default {
-  name: 'componentB',
-  created() {
-    this.$on('on-message', this.showMessage)
-  },
+  name: 'ComponentB',
   data() {
     return {}
+  },
+  created() {
+    this.$on('on-message', this.showMessage)
   },
   methods: {
     showMessage(text) {

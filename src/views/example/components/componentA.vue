@@ -4,27 +4,26 @@
 
 <script>
 export default {
-  inject: ['name'],
+  inject: ["name"],
+  data() {
+    return {
+      variable: this.name
+    };
+  },
   watch: {
     variable: {
       handler(newVal, oldVal) {
-        console.log('newVal', newVal)
-        console.log('oldVal', oldVal)
+        console.log("newVal", newVal);
+        console.log("oldVal", oldVal);
       },
       deep: true,
       immediate: true
     }
   },
   mounted() {
-    console.log(this.variable)
-  },
-  data() {
-    return {
-      variable: this.name
-    }
+    console.log(this.variable);
   }
-}
+};
 </script>
 
-<style>
-</style>
+<style></style>

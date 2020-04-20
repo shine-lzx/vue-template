@@ -9,11 +9,11 @@
 import Emitter from '@/mixins/emitter'
 import componentB from './components/componentA'
 export default {
-  name: 'componentA',
-  mixins: [Emitter],
+  name: 'ComponentA',
   components: {
     componentB
   },
+  mixins: [Emitter],
   data() {
     return {}
   },
