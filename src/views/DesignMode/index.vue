@@ -13,15 +13,27 @@ import {
 
 import { singleton } from "@/designMode/singletonPattern";
 import { Test, Father } from "@/designMode/decoratorPattern";
+import { proxyAddAll } from "@/designMode/proxyPattern";
+import { askPrice } from "@/designMode/strategyPattern";
+import { Example, Derive } from "@/designMode/tset";
 export default {
   data() {
     return {};
   },
   created() {
+    let a = proxyAddAll(1, 2, 3, 99999);
+    console.log(a);
     // this.fun2();
     let b = new Father();
     console.log(b.msg());
     // console.log(b);
+    this.dispose();
+
+    console.log(askPrice("fresh", 100));
+
+    new Example("shine", 18)
+    new Derive().reads()
+
   },
 
   methods: {
@@ -82,7 +94,9 @@ export default {
       if (a === b) {
         return true;
       }
-    }
+    },
+
+    dispose() {}
   }
 };
 </script>
